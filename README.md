@@ -8,7 +8,7 @@ We came up with the idea during a hack meeting, and have implemented the followi
 
 | File | Technique | Glibc-Version | Patch | Applicable CTF Challenges |
 |------|-----------|---------------|-------|---------------------------|
-| [first_fit.c](first_fit.c) | Demonstrating glibc malloc's first-fit behavior. | | | |
+| [first_fit.c](first_fit.c) | 展示Glibc的first-fit（首次适应算法）空间分配法。 | | | |
 | [calc_tcache_idx.c](calc_tcache_idx.c)| Demonstrating glibc's tcache index calculation.| | | |
 | [fastbin_dup.c](glibc_2.31/fastbin_dup.c) | Tricking malloc into returning an already-allocated heap pointer by abusing the fastbin freelist. | latest | | |
 | [fastbin_dup_into_stack.c](glibc_2.23/fastbin_dup_into_stack.c) | Tricking malloc into returning a nearly-arbitrary pointer by abusing the fastbin freelist. | latest | | [9447-search-engine](https://github.com/ctfs/write-ups-2015/tree/master/9447-ctf-2015/exploitation/search-engine), [0ctf 2017-babyheap](http://uaf.io/exploitation/2017/03/19/0ctf-Quals-2017-BabyHeap2017.html) |
